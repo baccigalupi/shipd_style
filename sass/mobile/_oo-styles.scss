@@ -66,6 +66,17 @@
 
 
 
+.shadow-container {
+  @include line;
+  padding-right: $shadow-padding;
+  padding-bottom: $shadow-padding;
+}
+
+.shadow {
+  @include shadowed;
+}
+
+
 .border {
   @include bordered;
 }
@@ -108,6 +119,10 @@
 
 .italic {
   font-style: italic;
+}
+
+.small-text {
+  font-size: 0.9*$em;
 }
 
 // colored text

@@ -14,7 +14,7 @@
 }
 
 @mixin shadowed {
-  @include box-shadow(transparentize($darkest-color, 0.1) 3px 3px 0);
+  @include box-shadow(transparentize($darkest-color, 0.3) $shadow-padding/2 $shadow-padding/2 $shadow-padding);
 }
 
 @mixin text-shadowed {

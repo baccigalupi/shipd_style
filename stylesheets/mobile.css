@@ -287,6 +287,20 @@ hr {
   opacity: 0.1;
 }
 
+/* line 24, ../sass/mobile/_layout-elements.scss */
+.panel {
+  background-color: #eaeaea;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 28, ../sass/mobile/_layout-elements.scss */
+.panel .inner {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
 /* line 1, ../sass/mobile/_oo-styles.scss */
 .block {
   display: block;
@@ -370,137 +384,159 @@ hr {
 }
 
 /* line 69, ../sass/mobile/_oo-styles.scss */
+.shadow-container {
+  display: block;
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+  padding-right: 4px;
+  padding-bottom: 4px;
+}
+
+/* line 75, ../sass/mobile/_oo-styles.scss */
+.shadow {
+  -moz-box-shadow: rgba(51, 51, 51, 0.7) 2px 2px 4px;
+  -webkit-box-shadow: rgba(51, 51, 51, 0.7) 2px 2px 4px;
+  box-shadow: rgba(51, 51, 51, 0.7) 2px 2px 4px;
+}
+
+/* line 80, ../sass/mobile/_oo-styles.scss */
 .border {
   border: 1px solid #d6d6d6;
 }
 
-/* line 73, ../sass/mobile/_oo-styles.scss */
+/* line 84, ../sass/mobile/_oo-styles.scss */
 .border-left {
   border-left: 1px solid #d6d6d6;
 }
 
-/* line 77, ../sass/mobile/_oo-styles.scss */
+/* line 88, ../sass/mobile/_oo-styles.scss */
 .border-right {
   border-right: 1px solid #d6d6d6;
 }
 
-/* line 81, ../sass/mobile/_oo-styles.scss */
+/* line 92, ../sass/mobile/_oo-styles.scss */
 .border-top {
   border-top: 1px solid #d6d6d6;
 }
 
-/* line 85, ../sass/mobile/_oo-styles.scss */
+/* line 96, ../sass/mobile/_oo-styles.scss */
 .border-bottom {
   border-bottom: 1px solid #d6d6d6;
 }
 
-/* line 89, ../sass/mobile/_oo-styles.scss */
+/* line 100, ../sass/mobile/_oo-styles.scss */
 .no-border {
   border: none;
 }
 
-/* line 97, ../sass/mobile/_oo-styles.scss */
+/* line 108, ../sass/mobile/_oo-styles.scss */
 .wrap {
   word-break: break-all;
   word-break: break-word;
 }
 
-/* line 101, ../sass/mobile/_oo-styles.scss */
+/* line 112, ../sass/mobile/_oo-styles.scss */
 .no-wrap {
   white-space: nowrap;
 }
 
-/* line 105, ../sass/mobile/_oo-styles.scss */
+/* line 116, ../sass/mobile/_oo-styles.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 109, ../sass/mobile/_oo-styles.scss */
+/* line 120, ../sass/mobile/_oo-styles.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 115, ../sass/mobile/_oo-styles.scss */
+/* line 124, ../sass/mobile/_oo-styles.scss */
+.small-text {
+  font-size: 16.2px;
+}
+
+/* line 130, ../sass/mobile/_oo-styles.scss */
 .light-text {
   color: #d6d6d6;
 }
 
-/* line 119, ../sass/mobile/_oo-styles.scss */
+/* line 134, ../sass/mobile/_oo-styles.scss */
 .primary-text {
   color: #7dc0fb;
 }
 
-/* line 123, ../sass/mobile/_oo-styles.scss */
+/* line 138, ../sass/mobile/_oo-styles.scss */
 .accent-text {
   color: #ffba1e;
 }
 
-/* line 127, ../sass/mobile/_oo-styles.scss */
+/* line 142, ../sass/mobile/_oo-styles.scss */
 .accent-2-text {
   color: #43a978;
 }
 
-/* line 131, ../sass/mobile/_oo-styles.scss */
+/* line 146, ../sass/mobile/_oo-styles.scss */
 .info-text {
   color: #0776d8;
 }
 
-/* line 135, ../sass/mobile/_oo-styles.scss */
+/* line 150, ../sass/mobile/_oo-styles.scss */
 .info-2-text {
   color: #2d7251;
 }
 
-/* line 139, ../sass/mobile/_oo-styles.scss */
+/* line 154, ../sass/mobile/_oo-styles.scss */
 .warn-text {
   color: #d19100;
 }
 
-/* line 143, ../sass/mobile/_oo-styles.scss */
+/* line 158, ../sass/mobile/_oo-styles.scss */
 .error-text {
   color: #d41d00;
 }
 
-/* line 149, ../sass/mobile/_oo-styles.scss */
+/* line 164, ../sass/mobile/_oo-styles.scss */
 .background-light {
   background-color: #eaeaea;
 }
 
-/* line 153, ../sass/mobile/_oo-styles.scss */
+/* line 168, ../sass/mobile/_oo-styles.scss */
 .background-dark {
   background-color: #333;
 }
 
-/* line 157, ../sass/mobile/_oo-styles.scss */
+/* line 172, ../sass/mobile/_oo-styles.scss */
 .background-primary {
   background-color: #7dc0fb;
 }
 
-/* line 161, ../sass/mobile/_oo-styles.scss */
+/* line 176, ../sass/mobile/_oo-styles.scss */
 .background-accent {
   background-color: #ffba1e;
 }
 
-/* line 165, ../sass/mobile/_oo-styles.scss */
+/* line 180, ../sass/mobile/_oo-styles.scss */
 .background-accent-2 {
   background-color: #43a978;
 }
 
-/* line 169, ../sass/mobile/_oo-styles.scss */
+/* line 184, ../sass/mobile/_oo-styles.scss */
 .background-info {
   background-color: #0776d8;
 }
 
-/* line 173, ../sass/mobile/_oo-styles.scss */
+/* line 188, ../sass/mobile/_oo-styles.scss */
 .background-info-2 {
   background-color: #2d7251;
 }
 
-/* line 177, ../sass/mobile/_oo-styles.scss */
+/* line 192, ../sass/mobile/_oo-styles.scss */
 .background-warn {
   background-color: #d19100;
 }
 
-/* line 181, ../sass/mobile/_oo-styles.scss */
+/* line 196, ../sass/mobile/_oo-styles.scss */
 .background-error {
   background-color: #ff4022;
 }
