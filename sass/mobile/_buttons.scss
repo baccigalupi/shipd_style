@@ -19,7 +19,7 @@ label.button {
   font-family: $button-font;
   font-weight: bold;
   background-color: $primary;
-  color: $lightest-color;
+  color: $darkest-color;
   padding: $spacing*1.2 $spacing*3;
   line-height: 1;
   letter-spacing: 1px;
@@ -28,7 +28,6 @@ label.button {
 
   @include rounded;
   @include shadowed;
-  @include text-shadowed;
   @include line;
 
   &:hover {
@@ -43,7 +42,6 @@ label.button {
 
   &.accent {
     background-color: $accent;
-    color: $darkest-color;
 
     &:hover {
       background-color: $accent-light;
@@ -56,7 +54,6 @@ label.button {
 
   &.accent-2 {
     background-color: $accent-2;
-    color: $lightest-color;
 
     &:hover {
       background-color: $accent-2-light;
@@ -71,16 +68,17 @@ label.button {
     background-color: $neutral-50;
 
     &:hover {
-      background-color: $neutral-30;
+      background-color: $neutral-40;
     }
 
     &:active {
-      background-color: $neutral-70;
+      background-color: $neutral-60;
     }
   }
 
   &.info {
     background-color: $info;
+    color: $neutral-10;
 
     &:hover {
       background-color: $info-light;
@@ -88,6 +86,44 @@ label.button {
 
     &:active {
       background-color: $info-dark;
+    }
+  }
+
+  &.info-2 {
+    background-color: $info-2;
+    color: $neutral-10;
+
+    &:hover {
+      background-color: $info-2-light;
+    }
+
+    &:active {
+      background-color: $info-2-dark;
+    }
+  }
+
+  &.warn {
+    background-color: $warn;
+    color: $neutral-10;
+
+    &:hover {
+      background-color: $warn-light;
+    }
+
+    &:active {
+      background-color: $warn-dark;
+    }
+  }
+
+  &.error {
+    background-color: $error;
+
+    &:hover {
+      background-color: $error-light;
+    }
+
+    &:active {
+      background-color: $error-dark;
     }
   }
 

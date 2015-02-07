@@ -456,87 +456,97 @@ hr {
   font-size: 16.2px;
 }
 
-/* line 130, ../sass/mobile/_oo-styles.scss */
+/* line 128, ../sass/mobile/_oo-styles.scss */
+.text-shadow {
+  text-shadow: rgba(51, 51, 51, 0.7) 1px 1px 1px;
+}
+
+/* line 132, ../sass/mobile/_oo-styles.scss */
+.text-shadow-light {
+  text-shadow: 1px 1px 0px #fff;
+}
+
+/* line 138, ../sass/mobile/_oo-styles.scss */
 .light-text {
   color: #d6d6d6;
 }
 
-/* line 134, ../sass/mobile/_oo-styles.scss */
+/* line 142, ../sass/mobile/_oo-styles.scss */
 .primary-text {
   color: #7dc0fb;
 }
 
-/* line 138, ../sass/mobile/_oo-styles.scss */
+/* line 146, ../sass/mobile/_oo-styles.scss */
 .accent-text {
   color: #ffba1e;
 }
 
-/* line 142, ../sass/mobile/_oo-styles.scss */
+/* line 150, ../sass/mobile/_oo-styles.scss */
 .accent-2-text {
   color: #43a978;
 }
 
-/* line 146, ../sass/mobile/_oo-styles.scss */
+/* line 154, ../sass/mobile/_oo-styles.scss */
 .info-text {
   color: #0776d8;
 }
 
-/* line 150, ../sass/mobile/_oo-styles.scss */
-.info-2-text {
-  color: #2d7251;
-}
-
-/* line 154, ../sass/mobile/_oo-styles.scss */
-.warn-text {
-  color: #d19100;
-}
-
 /* line 158, ../sass/mobile/_oo-styles.scss */
-.error-text {
-  color: #d41d00;
+.info-2-text {
+  color: #35845e;
 }
 
-/* line 164, ../sass/mobile/_oo-styles.scss */
+/* line 162, ../sass/mobile/_oo-styles.scss */
+.warn-text {
+  color: #b77f00;
+}
+
+/* line 166, ../sass/mobile/_oo-styles.scss */
+.error-text {
+  color: #ff2a08;
+}
+
+/* line 172, ../sass/mobile/_oo-styles.scss */
 .background-light {
   background-color: #eaeaea;
 }
 
-/* line 168, ../sass/mobile/_oo-styles.scss */
+/* line 176, ../sass/mobile/_oo-styles.scss */
 .background-dark {
   background-color: #333;
 }
 
-/* line 172, ../sass/mobile/_oo-styles.scss */
+/* line 180, ../sass/mobile/_oo-styles.scss */
 .background-primary {
   background-color: #7dc0fb;
 }
 
-/* line 176, ../sass/mobile/_oo-styles.scss */
+/* line 184, ../sass/mobile/_oo-styles.scss */
 .background-accent {
   background-color: #ffba1e;
 }
 
-/* line 180, ../sass/mobile/_oo-styles.scss */
+/* line 188, ../sass/mobile/_oo-styles.scss */
 .background-accent-2 {
   background-color: #43a978;
 }
 
-/* line 184, ../sass/mobile/_oo-styles.scss */
+/* line 192, ../sass/mobile/_oo-styles.scss */
 .background-info {
   background-color: #0776d8;
 }
 
-/* line 188, ../sass/mobile/_oo-styles.scss */
-.background-info-2 {
-  background-color: #2d7251;
-}
-
-/* line 192, ../sass/mobile/_oo-styles.scss */
-.background-warn {
-  background-color: #d19100;
-}
-
 /* line 196, ../sass/mobile/_oo-styles.scss */
+.background-info-2 {
+  background-color: #35845e;
+}
+
+/* line 200, ../sass/mobile/_oo-styles.scss */
+.background-warn {
+  background-color: #b77f00;
+}
+
+/* line 204, ../sass/mobile/_oo-styles.scss */
 .background-error {
   background-color: #ff4022;
 }
@@ -617,7 +627,7 @@ form .error-message {
 /* line 58, ../sass/mobile/_form-elements.scss */
 form .error .error-message {
   display: block;
-  color: #d41d00;
+  color: #ff2a08;
 }
 /* line 63, ../sass/mobile/_form-elements.scss */
 form .error .file-input {
@@ -664,7 +674,7 @@ label.button {
   font-family: "Trebuchet MS", Trebuchet, Tahoma, Geneva, sans-serif;
   font-weight: bold;
   background-color: #7dc0fb;
-  color: #fff;
+  color: #333;
   padding: 12px 30px;
   line-height: 1;
   letter-spacing: 1px;
@@ -676,13 +686,12 @@ label.button {
   -moz-box-shadow: rgba(51, 51, 51, 0.7) 2px 2px 4px;
   -webkit-box-shadow: rgba(51, 51, 51, 0.7) 2px 2px 4px;
   box-shadow: rgba(51, 51, 51, 0.7) 2px 2px 4px;
-  text-shadow: rgba(51, 51, 51, 0.7) 1px 1px 1px;
   display: block;
   overflow: hidden;
   *overflow: visible;
   *zoom: 1;
 }
-/* line 34, ../sass/mobile/_buttons.scss */
+/* line 33, ../sass/mobile/_buttons.scss */
 button:hover,
 input[type=submit]:hover,
 a.button:hover,
@@ -691,7 +700,7 @@ label.button:hover {
   text-decoration: none;
   background-color: #96ccfc;
 }
-/* line 39, ../sass/mobile/_buttons.scss */
+/* line 38, ../sass/mobile/_buttons.scss */
 button:active,
 input[type=submit]:active,
 a.button:active,
@@ -702,57 +711,55 @@ label.button:active {
   -webkit-box-shadow: inset rgba(51, 51, 51, 0.7) 2px 2px 4px;
   box-shadow: inset rgba(51, 51, 51, 0.7) 2px 2px 4px;
 }
-/* line 44, ../sass/mobile/_buttons.scss */
+/* line 43, ../sass/mobile/_buttons.scss */
 button.accent,
 input[type=submit].accent,
 a.button.accent,
 div.button.accent,
 label.button.accent {
   background-color: #ffba1e;
-  color: #333;
 }
-/* line 48, ../sass/mobile/_buttons.scss */
+/* line 46, ../sass/mobile/_buttons.scss */
 button.accent:hover,
 input[type=submit].accent:hover,
 a.button.accent:hover,
 div.button.accent:hover,
 label.button.accent:hover {
-  background-color: #ffd16a;
+  background-color: #ffca51;
 }
-/* line 52, ../sass/mobile/_buttons.scss */
+/* line 50, ../sass/mobile/_buttons.scss */
 button.accent:active,
 input[type=submit].accent:active,
 a.button.accent:active,
 div.button.accent:active,
 label.button.accent:active {
-  background-color: #d19100;
+  background-color: #eaa200;
 }
-/* line 57, ../sass/mobile/_buttons.scss */
+/* line 55, ../sass/mobile/_buttons.scss */
 button.accent-2,
 input[type=submit].accent-2,
 a.button.accent-2,
 div.button.accent-2,
 label.button.accent-2 {
   background-color: #43a978;
-  color: #fff;
 }
-/* line 61, ../sass/mobile/_buttons.scss */
+/* line 58, ../sass/mobile/_buttons.scss */
 button.accent-2:hover,
 input[type=submit].accent-2:hover,
 a.button.accent-2:hover,
 div.button.accent-2:hover,
 label.button.accent-2:hover {
-  background-color: #72c79e;
+  background-color: #4db885;
 }
-/* line 65, ../sass/mobile/_buttons.scss */
+/* line 62, ../sass/mobile/_buttons.scss */
 button.accent-2:active,
 input[type=submit].accent-2:active,
 a.button.accent-2:active,
 div.button.accent-2:active,
 label.button.accent-2:active {
-  background-color: #2d7251;
+  background-color: #3c976b;
 }
-/* line 70, ../sass/mobile/_buttons.scss */
+/* line 67, ../sass/mobile/_buttons.scss */
 button.neutral,
 input[type=submit].neutral,
 a.button.neutral,
@@ -760,47 +767,122 @@ div.button.neutral,
 label.button.neutral {
   background-color: #999999;
 }
-/* line 73, ../sass/mobile/_buttons.scss */
+/* line 70, ../sass/mobile/_buttons.scss */
 button.neutral:hover,
 input[type=submit].neutral:hover,
 a.button.neutral:hover,
 div.button.neutral:hover,
 label.button.neutral:hover {
-  background-color: #c1c1c1;
+  background-color: #adadad;
 }
-/* line 77, ../sass/mobile/_buttons.scss */
+/* line 74, ../sass/mobile/_buttons.scss */
 button.neutral:active,
 input[type=submit].neutral:active,
 a.button.neutral:active,
 div.button.neutral:active,
 label.button.neutral:active {
-  background-color: #707070;
+  background-color: #848484;
 }
-/* line 82, ../sass/mobile/_buttons.scss */
+/* line 79, ../sass/mobile/_buttons.scss */
 button.info,
 input[type=submit].info,
 a.button.info,
 div.button.info,
 label.button.info {
   background-color: #0776d8;
+  color: #eaeaea;
 }
-/* line 85, ../sass/mobile/_buttons.scss */
+/* line 83, ../sass/mobile/_buttons.scss */
 button.info:hover,
 input[type=submit].info:hover,
 a.button.info:hover,
 div.button.info:hover,
 label.button.info:hover {
-  background-color: #339cf9;
+  background-color: #0784f1;
 }
-/* line 89, ../sass/mobile/_buttons.scss */
+/* line 87, ../sass/mobile/_buttons.scss */
 button.info:active,
 input[type=submit].info:active,
 a.button.info:active,
 div.button.info:active,
 label.button.info:active {
-  background-color: #044e8e;
+  background-color: #0669c0;
 }
-/* line 94, ../sass/mobile/_buttons.scss */
+/* line 92, ../sass/mobile/_buttons.scss */
+button.info-2,
+input[type=submit].info-2,
+a.button.info-2,
+div.button.info-2,
+label.button.info-2 {
+  background-color: #35845e;
+  color: #eaeaea;
+}
+/* line 96, ../sass/mobile/_buttons.scss */
+button.info-2:hover,
+input[type=submit].info-2:hover,
+a.button.info-2:hover,
+div.button.info-2:hover,
+label.button.info-2:hover {
+  background-color: #3c976b;
+}
+/* line 100, ../sass/mobile/_buttons.scss */
+button.info-2:active,
+input[type=submit].info-2:active,
+a.button.info-2:active,
+div.button.info-2:active,
+label.button.info-2:active {
+  background-color: #2d7251;
+}
+/* line 105, ../sass/mobile/_buttons.scss */
+button.warn,
+input[type=submit].warn,
+a.button.warn,
+div.button.warn,
+label.button.warn {
+  background-color: #b77f00;
+  color: #eaeaea;
+}
+/* line 109, ../sass/mobile/_buttons.scss */
+button.warn:hover,
+input[type=submit].warn:hover,
+a.button.warn:hover,
+div.button.warn:hover,
+label.button.warn:hover {
+  background-color: #d19100;
+}
+/* line 113, ../sass/mobile/_buttons.scss */
+button.warn:active,
+input[type=submit].warn:active,
+a.button.warn:active,
+div.button.warn:active,
+label.button.warn:active {
+  background-color: #9e6d00;
+}
+/* line 118, ../sass/mobile/_buttons.scss */
+button.error,
+input[type=submit].error,
+a.button.error,
+div.button.error,
+label.button.error {
+  background-color: #ff4022;
+}
+/* line 121, ../sass/mobile/_buttons.scss */
+button.error:hover,
+input[type=submit].error:hover,
+a.button.error:hover,
+div.button.error:hover,
+label.button.error:hover {
+  background-color: #ff563c;
+}
+/* line 125, ../sass/mobile/_buttons.scss */
+button.error:active,
+input[type=submit].error:active,
+a.button.error:active,
+div.button.error:active,
+label.button.error:active {
+  background-color: #ff2a08;
+}
+/* line 130, ../sass/mobile/_buttons.scss */
 button.disabled,
 input[type=submit].disabled,
 a.button.disabled,

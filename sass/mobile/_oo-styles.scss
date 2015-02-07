@@ -125,6 +125,14 @@
   font-size: 0.9*$em;
 }
 
+.text-shadow {
+  @include text-shadowed;
+}
+
+.text-shadow-light {
+  @include text-shadowed-light;
+}
+
 // colored text
 
 .light-text {
