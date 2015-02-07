@@ -14,8 +14,8 @@ $neutral-10: mix($lightest-color, $darkest-color, 90%);
 
 // Theme based color
 $primary:        rgb(125, 192, 251);
-$primary-light:  lighten($primary, 15%);
-$primary-dark:   darken($primary, 15%);
+$primary-light:  lighten($primary, 5%);
+$primary-dark:   darken($primary, 5%);
 
 $accent:         rgb(255, 186, 30);
 $accent-light:   lighten($accent, 15%);

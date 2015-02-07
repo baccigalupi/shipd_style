@@ -17,8 +17,12 @@
   @include box-shadow(transparentize($darkest-color, 0.3) $shadow-padding/2 $shadow-padding/2 $shadow-padding);
 }
 
+@mixin depressed-shadow {
+  @include box-shadow(inset transparentize($darkest-color, 0.3) $shadow-padding/2 $shadow-padding/2 $shadow-padding);
+}
+
 @mixin text-shadowed {
-  @include text-shadow(transparentize($darkest-color, 0.1) 3px 3px 0);
+  @include text-shadow(transparentize($darkest-color, 0.3) 1px 1px 1px);
 }
 
 @mixin text-shadowed-light {
@@ -30,7 +34,7 @@
 }
 
 /* form input fixes */
-@mixin active-input-padding-fix {
+@mixin focus-input-padding-fix {
   padding: $input-top-padding - $input-border-width $input-side-padding - $input-border-width;
 }
 

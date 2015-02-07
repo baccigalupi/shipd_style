@@ -1,0 +1,97 @@
+button,
+input[type=submit] {
+  @include line;
+}
+
+button,
+input[type=submit],
+a.button,
+div.button,
+label.button {
+  // overrides that should be in reset/normalize
+  outline-style: none;
+  resize: none;
+  -webkit-appearance: none;
+  border: none;
+
+  display: block;
+  font-size: $em;
+  font-family: $button-font;
+  font-weight: bold;
+  background-color: $primary;
+  color: $lightest-color;
+  padding: $spacing*1.2 $spacing*3;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: center;
+  white-space: normal;
+
+  @include rounded;
+  @include shadowed;
+  @include text-shadowed;
+  @include line;
+
+  &:hover {
+    text-decoration: none;
+    background-color: $primary-light;
+  }
+
+  &:active {
+    background-color: $primary-dark;
+    @include depressed-shadow;
+  }
+
+  &.accent {
+    background-color: $accent;
+    color: $darkest-color;
+
+    &:hover {
+      background-color: $accent-light;
+    }
+
+    &:active {
+      background-color: $accent-dark;
+    }
+  }
+
+  &.accent-2 {
+    background-color: $accent-2;
+    color: $lightest-color;
+
+    &:hover {
+      background-color: $accent-2-light;
+    }
+
+    &:active {
+      background-color: $accent-2-dark;
+    }
+  }
+
+  &.neutral {
+    background-color: $neutral-50;
+
+    &:hover {
+      background-color: $neutral-30;
+    }
+
+    &:active {
+      background-color: $neutral-70;
+    }
+  }
+
+  &.info {
+    background-color: $info;
+
+    &:hover {
+      background-color: $info-light;
+    }
+
+    &:active {
+      background-color: $info-dark;
+    }
+  }
+
+  &.disabled {
+    @include opacity(0.3);
+  }
+}
