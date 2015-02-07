@@ -1,12 +1,4 @@
-@mixin line {
-  display: block;
-  overflow: hidden;
-  *overflow: visible;
-  *zoom: 1;
-}
-
-.line, .row, .last-unit,
-.s-row {
+.line, .row, .last-unit {
   width: 100%;
   @include line;
 }
@@ -35,6 +27,11 @@
   height: $spacing;
 }
 
-.s-hidden {
+
+.m-hidden {
   display: none;
+}
+.m-row {
+  width: 100%;
+  @include line;
 }

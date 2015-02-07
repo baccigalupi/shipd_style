@@ -1,0 +1,171 @@
+.block {
+  @include line;
+}
+
+.overflow {
+  overflow: visible;
+}
+
+.no-overflow, .no-scroll {
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+
+.inner-top {
+  padding-top: $spacing;
+}
+
+.inner-bottom {
+  padding-bottom: $spacing;
+}
+
+.inner-left {
+  padding-left: $spacing;
+}
+
+.inner-right {
+  padding-right: $spacing;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+
+.rounded {
+  @include rounded;
+}
+
+.circular {
+  @include border-radius(50%);
+}
+
+
+
+.centered-content {
+  text-align: center;
+}
+
+.centerable {
+  display: inline-block;
+}
+
+
+
+.border {
+  @include bordered;
+}
+
+.border-left {
+  border-left: $border-width solid $neutral-20;
+}
+
+.border-right {
+  border-right: $border-width solid $neutral-20;
+}
+
+.border-top {
+  border-top: $border-width solid $neutral-20;
+}
+
+.border-bottom {
+  border-bottom: $border-width solid $neutral-20;
+}
+
+.no-border {
+  border: none;
+}
+
+
+
+// text styles
+
+.wrap {
+  @include word-break(break-all);
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// colored text
+
+.light-text {
+  color: $neutral-20;
+}
+
+.accent-text {
+  color: $accent;
+}
+
+.accent-2-text {
+  color: $accent-2;
+}
+
+.info-text {
+  color: $info;
+}
+
+.info-2-text {
+  color: $info-2;
+}
+
+.warn-text {
+  color: $warn;
+}
+
+.error-text {
+  color: $error;
+}
+
+
+// colored backgrounds
+.background-light {
+  background-color: $neutral-10;
+}
+
+.background-accent {
+  background-color: $accent;
+}
+
+.background-accent-2 {
+  background-color: $accent-2;
+}
+
+.background-info {
+  background-color: $info;
+}
+
+.background-info-2 {
+  background-color: $info-2;
+}
+
+.background-warn {
+  background-color: $warn;
+}
+
+.background-error {
+  background-color: $error;
+}

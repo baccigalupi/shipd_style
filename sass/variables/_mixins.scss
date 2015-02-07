@@ -1,0 +1,40 @@
+@mixin line {
+  display: block;
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+}
+
+@mixin bordered {
+  border: $border-width solid $neutral-20;
+}
+
+@mixin rounded {
+  @include border-radius($border-radius-size);
+}
+
+@mixin shadowed {
+  @include box-shadow(transparentize($darkest-color, 0.1) 3px 3px 0);
+}
+
+@mixin text-shadowed {
+  @include text-shadow(transparentize($darkest-color, 0.1) 3px 3px 0);
+}
+
+@mixin text-shadowed-light {
+  @include text-shadow(1px 1px 0px $lightest-color);
+}
+
+@mixin small-text {
+  font-size: $em*0.9;
+}
+
+/* form input fixes */
+@mixin active-input-padding-fix {
+  padding: $input-top-padding - $input-border-width $input-side-padding - $input-border-width;
+}
+
+@mixin input-margin-fix {
+  margin-left: -$input-side-padding;
+  margin-top: -$input-top-padding;
+}

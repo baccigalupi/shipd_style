@@ -1,0 +1,22 @@
+#page {
+  width: 100%;
+}
+
+#header {
+  background-color: $primary;
+  height: 3 * $em;
+  border-bottom: 1px solid transparentize($lightest-color, 0.8);
+  @include box-shadow(0px 0.5px 10px);
+}
+
+#overlay {
+  position: absolute;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: $overlay-height;
+  background-color: black;
+  @include opacity(0.1);
+}
