@@ -30,11 +30,11 @@ $info:          darken($primary, 30%);
 $info-light:    lighten($info, 15%);
 $info-dark:     darken($info, 15%);
 
-$info-2:        darken($accent-2, 30%);
+$info-2:        $accent-2;
 $info-2-light:  lighten($info-2, 15%);
 $info-2:        darken($info-2, 15%);
 
-$warn:          darken($accent, 30%);
+$warn:          darken($accent, 15%);
 $warn-light:    lighten($warn, 15%);
 $warn-dark:     darken($warn, 15%);
 
