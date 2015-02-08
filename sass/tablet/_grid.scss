@@ -1,6 +1,15 @@
+.inner {
+  padding: $spacing;
+  @include line;
+}
+
+.spacer {
+  width: $spacing;
+  height: $spacing;
+}
+
 // mobile overrides
 .m-row { float: left; width: auto; }
-.m-hidden { display: none; }
 
 // creates a row in tablet mode only
 .t-row {
@@ -21,16 +30,6 @@
 .t-size-3-5{width:60%;}
 .t-size-4-5{width:80%;}
 
-.t-hidden {
-  display: none;
-}
-
-.inner {
-  padding: $spacing;
-  @include line;
-}
-
-.spacer {
-  width: $spacing;
-  height: $spacing;
-}
+.m-hidden { display: block; }
+.d-hidden { display: block; }
+.t-hidden { display: none; }

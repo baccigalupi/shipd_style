@@ -1,3 +1,13 @@
+.inner {
+  padding: $spacing;
+  @include line;
+}
+
+.spacer {
+  width: $spacing;
+  height: $spacing;
+}
+
 .m-hidden { display: block; }
 .t-hidden { display: block; }
 .d-hidden { display: none; }
@@ -21,17 +31,3 @@
 .d-size-3-4{width:75%;}
 .d-size-3-5{width:60%;}
 .d-size-4-5{width:80%;}
-
-.d-hidden {
-  display: none;
-}
-
-.inner {
-  padding: $spacing;
-  @include line;
-}
-
-.spacer {
-  width: $spacing;
-  height: $spacing;
-}

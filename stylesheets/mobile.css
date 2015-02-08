@@ -165,17 +165,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none;
 }
 
-/* line 33, ../sass/mobile/_grid.scss */
-.t-hidden {
-  display: inherit;
-}
-
-/* line 36, ../sass/mobile/_grid.scss */
-.d-hidden {
-  display: inherit;
-}
-
-/* line 40, ../sass/mobile/_grid.scss */
+/* line 34, ../sass/mobile/_grid.scss */
 .m-row {
   width: 100%;
   display: block;
