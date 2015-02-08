@@ -27,10 +27,16 @@
   height: $spacing;
 }
 
-
 .m-hidden {
   display: none;
 }
+.t-hidden {
+  display: inherit;
+}
+.d-hidden {
+  display: inherit;
+}
+
 .m-row {
   width: 100%;
   @include line;

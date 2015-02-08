@@ -1,5 +1,11 @@
+body {
+  background-color: $neutral-60;
+}
+
 #page {
+  @include line;
   width: 100%;
+  background-color: $lightest-color;
 }
 
 #header {

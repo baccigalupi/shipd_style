@@ -38,3 +38,11 @@ hr {
   background-color: $neutral-20;
   height: 1px;
 }
+
+ul.bullet-list {
+  list-style: disc; padding: $spacing; margin: $spacing;
+
+  li { padding: $spacing/2 $spacing; }
+}
+
+// TODO: same for numberend list
