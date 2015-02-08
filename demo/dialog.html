@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Shipd Style - Responsive Columns</title>
+  <title>Shipd Style - Dialog with Overlay</title>
   <meta name="viewport" content="initial-scale=1">
   <link href="/favicon.ico" rel="shortcut icon" type="image/ico">
   <link rel="stylesheet" href="../stylesheets/mobile.css">
@@ -11,19 +11,41 @@
   <link href='http://fonts.googleapis.com/css?family=Port+Lligat+Slab' rel='stylesheet' type='text/css'>
 
   <style>
-    @media (min-width: 768px) {
-      .column-inner {
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-
-      .layout-inner {
-        padding: 15px 10px;
-      }
+  @media (min-width: 768px) {
+    .column-inner {
+      padding-left: 5px;
+      padding-right: 5px;
     }
+
+    .layout-inner {
+      padding: 15px 10px;
+    }
+  }
   </style>
 </head>
 <body>
+  <div id='overlay'>
+    <div class='dialog-container'>
+      <div class='inner dialog-inner'>
+        <div class='dialog inner border rounded'>
+          <h1 class='inner-bottom'>Hello Dialog!</h1>
+          <p>
+            Sadly, mobile does not consistently handle fixed position elements.
+            So, it is recommended that you supplement this CSS with JS that inspects the page
+            size after load and increases the overlay height.
+          </p>
+          <p>
+            You kind of need JS to close a dialog anyway.
+          </p>
+          <div class='unit'>
+            <div class='shadow-container'>
+              <a class='button'>Ok then!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="page">
     <div class='inner layout-inner'>
       <div class='layout-inner inner'>

@@ -43,6 +43,11 @@ h6 {
   padding: 10px;
 }
 
+/* line 13, ../sass/tablet/_layout-elements.scss */
+.dialog-container {
+  width: 50%;
+}
+
 /* line 1, ../sass/tablet/_button-form-elements.scss */
 button,
 input[type=submit],

@@ -12,7 +12,7 @@ body {
   background-color: $primary;
   height: 3 * $em;
   border-bottom: 1px solid transparentize($lightest-color, 0.8);
-  @include box-shadow(0px 0.5px 10px);
+  @include box-shadow($darkest-color 0px 0.5px 10px);
 }
 
 #overlay {
@@ -23,8 +23,24 @@ body {
   left: 0;
   right: 0;
   z-index: $overlay-height;
-  background-color: black;
-  @include opacity(0.1);
+  background-color: transparentize($darkest-color, 0.5);
+}
+
+.dialog-container {
+  display: block;
+  position: relative;
+  top: $spacing*2;
+  margin: 0 auto;
+  z-index: $overlay-height + 100;
+}
+
+.dialog-inner {
+  padding: $spacing *1.5;
+}
+
+.dialog {
+  background-color: $lightest-color;
+  @include box-shadow($darkest-color $spacing/3 $spacing/3 $spacing*2);
 }
 
 .panel {

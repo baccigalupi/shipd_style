@@ -289,9 +289,9 @@ body {
   background-color: #7dc0fb;
   height: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  -moz-box-shadow: 0px 0.5px 10px;
-  -webkit-box-shadow: 0px 0.5px 10px;
-  box-shadow: 0px 0.5px 10px;
+  -moz-box-shadow: #333 0px 0.5px 10px;
+  -webkit-box-shadow: #333 0px 0.5px 10px;
+  box-shadow: #333 0px 0.5px 10px;
 }
 
 /* line 18, ../sass/mobile/_layout-elements.scss */
@@ -303,19 +303,39 @@ body {
   left: 0;
   right: 0;
   z-index: 10000;
-  background-color: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
-  opacity: 0.1;
+  background-color: rgba(51, 51, 51, 0.5);
 }
 
-/* line 30, ../sass/mobile/_layout-elements.scss */
+/* line 29, ../sass/mobile/_layout-elements.scss */
+.dialog-container {
+  display: block;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  z-index: 10100;
+}
+
+/* line 37, ../sass/mobile/_layout-elements.scss */
+.dialog-inner {
+  padding: 15px;
+}
+
+/* line 41, ../sass/mobile/_layout-elements.scss */
+.dialog {
+  background-color: #fff;
+  -moz-box-shadow: #333 3.33333px 3.33333px 20px;
+  -webkit-box-shadow: #333 3.33333px 3.33333px 20px;
+  box-shadow: #333 3.33333px 3.33333px 20px;
+}
+
+/* line 46, ../sass/mobile/_layout-elements.scss */
 .panel {
   background-color: #eaeaea;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 34, ../sass/mobile/_layout-elements.scss */
+/* line 50, ../sass/mobile/_layout-elements.scss */
 .panel .inner {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -529,7 +549,7 @@ body {
 
 /* line 172, ../sass/mobile/_oo-styles.scss */
 .background-light {
-  background-color: #eaeaea;
+  background-color: #fff;
 }
 
 /* line 176, ../sass/mobile/_oo-styles.scss */
