@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shipd Style - Carousel</title>
+  <meta name="viewport" content="initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/ico">
+  <link rel="stylesheet" href="../stylesheets/mobile.css">
+  <link rel="stylesheet" href="../stylesheets/tablet.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="../stylesheets/desktop.css" media="screen and (min-width: 1024px)">
+  <link href='http://fonts.googleapis.com/css?family=Port+Lligat+Slab' rel='stylesheet' type='text/css'>
+
+  <style>
+    .my-carousel {
+      height: 300px;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script>
+    var setupcarousel = function() {
+      var slideWidth = $('.current-slide').width();
+      $('.current-slide').css({left: 0});
+      $('.next-slide').css({left: slideWidth});
+    };
+
+    var movecarouselLeft = function() {
+      var slideWidth = $('.current-slide').width();
+      $('.current-slide').css({left: -slideWidth});
+      $('.next-slide').css({left: 0});
+      $('.move-carousel-left').css({visibility: 'hidden'});
+    };
+
+    $(document).ready(function() {
+      setupcarousel();
+      $('.move-carousel-left').on('click', movecarouselLeft);
+    });
+  </script>
+</head>
+<body>
+  <div id="page">
+    <div class='inner'>
+      <div class='row'>
+        <h1 class='centered-content'>
+          <div class='unit size-1-3 move-carousel-left pointer-cursor'>&laquo;</div>
+          <div class='unit size-1-3'>Carousel</div>
+          <div class='unit size-1-3 move-carousel-right pointer-cursor'>&nbsp;<!--&raquo;--></div>
+        </h1>
+      </div>
+
+      <div class='spacer'></div>
+
+      <div class='carousel-container my-carousel row'>
+        <div class='carousel-window'>
+          <div class='carousel-slide background-accent current-slide'>
+            <h1 class='inner centered-content'>1</h1>
+          </div>
+          <div class='carousel-slide background-accent-2 next-slide'>
+            <h1 class='inner centered-content'>2</h1>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Because the carousel uses absolute and relative positioning,
+        you must set an explicit height on the .carousel-container.
+        Best practices dictates adding a class specific to your instance
+        of the carousel usage: such as a class 'my-great-carousel'.
+        Then the height is applied to the custom class, not all carousel objects.
+      </p>
+
+      <p>
+        The carousel requires some JS to set it in motion.
+        The transitions and positioning are pure CSS, but the triggering of the change position happens via JS.
+      </p>
+    </div>
+  </div>
+</body>

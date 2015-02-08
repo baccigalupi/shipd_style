@@ -8,7 +8,11 @@
 
 @import "mobile/grid";
 @import "mobile/typography";
+
+// below this line is optional
+
+@import "mobile/oo-styles"; // for brevity, pick and choose your styles
 @import "mobile/layout-elements";
-@import "mobile/oo-styles";
 @import "mobile/form-elements";
 @import "mobile/buttons";
+@import "mobile/widgets/carousel";
