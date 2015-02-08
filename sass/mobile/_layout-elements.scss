@@ -24,6 +24,7 @@ body {
   right: 0;
   z-index: $overlay-height;
   background-color: transparentize($darkest-color, 0.5);
+  @include opacity-transition;
 }
 
 .dialog-container {
@@ -32,15 +33,24 @@ body {
   top: $spacing*2;
   margin: 0 auto;
   z-index: $overlay-height + 100;
+  @include opacity-transition;
 }
 
 .dialog-inner {
-  padding: $spacing *1.5;
+  padding: $spacing*1.5;
 }
 
 .dialog {
   background-color: $lightest-color;
   @include box-shadow($darkest-color $spacing/3 $spacing/3 $spacing*2);
+
+  .close-x {
+    font-size: $em*2;
+    position: absolute;
+    right: $spacing*4;
+    top: $spacing*1.5;
+    cursor: pointer;
+  }
 }
 
 .panel {

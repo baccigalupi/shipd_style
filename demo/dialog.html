@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="../stylesheets/desktop.css" media="screen and (min-width: 1024px)">
   <link href='http://fonts.googleapis.com/css?family=Port+Lligat+Slab' rel='stylesheet' type='text/css'>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
   <style>
   @media (min-width: 768px) {
     .column-inner {
@@ -22,12 +24,44 @@
     }
   }
   </style>
+
+  <script>
+    var resizeOverlay = function() {
+      var height = $(document).height();
+      $('#overlay').height(height);
+    };
+
+    var hideDialog = function() {
+      $('#overlay').addClass("transparent");
+
+      setTimeout(function() {
+        $('#overlay').addClass('hidden');
+        $('.dialog-container').remove();
+      }, 1000);
+
+      setTimeout(function() {
+        $('.dialog-container').addClass('transparent');
+      }, 250);
+    };
+
+    $(document).ready(function() {
+      // animate in all the components
+      $('#overlay').removeClass('hidden').removeClass('transparent');
+      setTimeout(function() {
+        $('.dialog-container').removeClass('transparent');
+      }, 250);
+
+      $(window).on('resize orientationchange', resizeOverlay);
+      $('.close-dialog').click(hideDialog);
+    });
+  </script>
 </head>
 <body>
-  <div id='overlay'>
-    <div class='dialog-container'>
+  <div id='overlay' class='hidden transparent'>
+    <div class='dialog-container transparent'>
       <div class='inner dialog-inner'>
         <div class='dialog inner border rounded'>
+          <div class="close-dialog close-x">&times;</div>
           <h1 class='inner-bottom'>Hello Dialog!</h1>
           <p>
             Sadly, mobile does not consistently handle fixed position elements.
@@ -35,11 +69,11 @@
             size after load and increases the overlay height.
           </p>
           <p>
-            You kind of need JS to close a dialog anyway.
+            You kind of need JS to close a dialog anyway, with CSS transitions too.
           </p>
           <div class='unit'>
             <div class='shadow-container'>
-              <a class='button'>Ok then!</a>
+              <a class='button close-dialog'>Ok then!</a>
             </div>
           </div>
         </div>

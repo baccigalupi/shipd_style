@@ -25,6 +25,7 @@ label.button {
   letter-spacing: 1px;
   text-align: center;
   white-space: normal;
+  cursor: pointer;
 
   @include rounded;
   @include shadowed;

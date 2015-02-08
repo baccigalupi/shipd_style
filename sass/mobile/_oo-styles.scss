@@ -2,6 +2,10 @@
   @include line;
 }
 
+.hidden {
+  display: none;
+}
+
 .overflow {
   overflow: visible;
 }
@@ -76,6 +80,13 @@
   @include shadowed;
 }
 
+.transparent {
+  @include opacity(0);
+}
+
+.opaque {
+  @include opacity(1);
+}
 
 .border {
   @include bordered;

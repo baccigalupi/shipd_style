@@ -29,8 +29,9 @@
   @include text-shadow(1px 1px 0px $lightest-color);
 }
 
-@mixin small-text {
-  font-size: $em*0.9;
+@mixin opacity-transition {
+  @include transition-property(opacity);
+  @include transition-duration(500ms);
 }
 
 /* form input fixes */
