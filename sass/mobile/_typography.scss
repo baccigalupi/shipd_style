@@ -33,6 +33,9 @@ a:hover {
   text-decoration: underline;
 }
 
+em { font-style: italic; }
+b { font-weight: bold; }
+
 hr {
   border: 0;
   background-color: $neutral-20;

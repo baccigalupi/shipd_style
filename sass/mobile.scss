@@ -12,7 +12,10 @@
 // below this line is optional
 
 @import "mobile/oo-styles"; // for brevity, pick and choose your styles
-@import "mobile/layout-elements";
-@import "mobile/form-elements";
-@import "mobile/buttons";
+
+@import "mobile/widgets/form-elements";
+@import "mobile/widgets/buttons";
+@import "mobile/widgets/page-layout";
+@import "mobile/widgets/header";
+@import "mobile/widgets/dialog-overlay";
 @import "mobile/widgets/carousel";

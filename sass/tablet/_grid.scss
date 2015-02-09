@@ -17,6 +17,10 @@
   @include line;
 }
 
+.m-hidden { display: block; }
+.d-hidden { display: block; }
+.t-hidden { display: none; }
+
 .t-unit{float:left;}
 .t-unit-right{float:right;}
 .t-size-1-1{width:100%;}
@@ -30,6 +34,6 @@
 .t-size-3-5{width:60%;}
 .t-size-4-5{width:80%;}
 
-.m-hidden { display: block; }
-.d-hidden { display: block; }
-.t-hidden { display: none; }
+.right {
+  float: right;
+}

@@ -170,3 +170,8 @@ textarea {
 .d-size-4-5 {
   width: 80%;
 }
+
+/* line 35, ../sass/desktop/_grid.scss */
+.right {
+  float: right;
+}
