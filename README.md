@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-### As a Compass project
+### Compass with Copied files
+
+
+
+### As a Compass project using ShipdStyle as a plugin:
 
 Make a directory:
 
@@ -36,6 +40,18 @@ ShipdStyle includes the compass dependency, so no need to add that.
 Run the compass command to create a directory structure:
 
     compass init
+
+Import the files into your projects scss file. The compass default gives you
+a screen.scss file to work with. Shipd uses mobile, tablet and desktop stylesheets. There are basic styles and then there are style sheets per widget. The the easy load stylesheets on the top level include everything.
+
+    @import "shipd-mobile"; // include all styles mobile
+    @import "shipd-tablet"; // includes progressive modifications for tablet
+    @import "shipd-desktop"; // includes progressive additions for desktop
+
+    // @import "shipd-all"; // one stylesheet that includes all three
+
+    // @import "mobile/grid"; // just pick and choose the ones you want!
+
 
 Compile stylesheets with the 'shipd_style' plugin required:
 
