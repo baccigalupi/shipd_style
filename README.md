@@ -22,7 +22,28 @@ Or install it yourself as:
 
 ### Compass with Copied files
 
+ShipdStyle is available as a compass plugin, but the goal of ShipdStyle is for
+the developer to have a good baseline on which to really own the responsive styles. Also, compass has a funky file locator that makes in really hard to get
+to all the great modular partials that make ShipdStyle the modular framework that it is.
 
+ShipdStyle therefore comes with some rake files to copy the base files into your
+project.
+
+    rake shipd_style:copy_styles
+
+Alternatively you can pass in a directory:
+
+    rake shipd_style:copy_styles[app/assets/stylesheets]
+
+Compass can then take on the heavy lifting of compiling these files without worrying about the plugin:
+
+    compass compile
+
+    # -- or --
+
+    compass watch
+
+Compass comes with a great many options and configurations. It is the source of truth when using it with these styles.
 
 ### As a Compass project using ShipdStyle as a plugin:
 
