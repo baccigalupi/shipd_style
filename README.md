@@ -20,17 +20,35 @@ Or install it yourself as:
 
 ## Usage
 
-### Usage with just Compass
+### As a Compass project
 
-Install compass:
+Make a directory:
 
-    gem install 'compass'
+    mkdir my_styles
 
-Run the compass command line tool to create a new application in the directory of your choosing:
+Add a Gemfile with just the shipd_style gem:
+
+    source 'https://rubygems.org'
+
+    gem 'shipd_style'
+
+ShipdStyle includes the compass dependency, so no need to add that.
+Run the compass command to create a directory structure:
 
     compass init
 
-### Use With Rails
+Compile stylesheets with the 'shipd_style' plugin required:
+
+    compass compile -r shipd_style
+
+Watch your library and have it automatically compile with this command:
+
+    compass watch -r shipd_style
+
+Compass is a vast framework with any number of great command line options for
+building exactly the stylesheets desired.
+
+### Use with Rails
 
 
 ## Concepts
