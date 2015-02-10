@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    shipd_style (0.1.0)
+      compass
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -16,6 +22,7 @@ GEM
       sass (>= 3.2, < 3.5)
     ffi (1.9.6)
     multi_json (1.10.1)
+    rake (10.1.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -25,4 +32,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass
+  bundler (~> 1.6)
+  rake
+  shipd_style!
