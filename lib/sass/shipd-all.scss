@@ -1,9 +1,9 @@
-@import "mobile";
+@import "shipd-mobile";
 
 @media screen and (min-width: 768px) {
-  @import "tablet";
+  @import "shipd-tablet";
 }
 
 @media screen and (min-width: 1024px) {
-  @import "desktop";
+  @import "shipd-desktop";
 }
