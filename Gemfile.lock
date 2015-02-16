@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    shipd_style (0.2.2)
+    shipd_style (0.2.3)
       compass
 
 GEM
