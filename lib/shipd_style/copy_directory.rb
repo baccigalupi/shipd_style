@@ -3,15 +3,11 @@ module ShipdStyle
     def perform
       make_directory
       # still using tick marks because of the * at the end of the path
-      `cp -r #{source_directory} #{destination_directory}`
+      `cp -r #{source_directory} #{path}`
     end
 
     def make_directory
-      FileUtils.mkdir_p(destination_directory) unless File.exist?(destination_directory)
-    end
-
-    def destination_directory
-      "#{path}/#{directory_name}"
+      FileUtils.mkdir_p(path) unless File.exist?(path)
     end
 
     def source_directory

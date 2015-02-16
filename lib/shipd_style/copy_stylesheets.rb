@@ -5,7 +5,7 @@ module ShipdStyle
     end
 
     def remove_namespace
-      destination_directory = copier.destination_directory
+      destination_directory = "#{path}/sass"
       FileUtils.mv(destination_directory + "/shipd-mobile.scss", destination_directory + "/mobile.scss")
       FileUtils.mv(destination_directory + "/shipd-tablet.scss", destination_directory + "/tablet.scss")
       FileUtils.mv(destination_directory + "/shipd-desktop.scss", destination_directory + "/desktop.scss")
@@ -19,7 +19,7 @@ module ShipdStyle
     end
 
     def copier
-      @copier ||= ShipdStyle::CopyDirectory.new(path, "sass")
+      @copier ||= ShipdStyle::CopyDirectory.new(path + "/sass", "sass")
     end
   end
 end
