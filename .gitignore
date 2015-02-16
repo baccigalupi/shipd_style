@@ -23,3 +23,4 @@ mkmf.log
 
 .sass-cache/
 lib/sass/*.css
+spec/support/copy_dir

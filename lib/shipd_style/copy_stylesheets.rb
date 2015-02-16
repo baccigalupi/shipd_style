@@ -5,17 +5,17 @@ module ShipdStyle
     end
 
     def remove_namespace
-      sass_path = copier.source_path
-      FileUtils.mv(sass_path + "/shipd-mobile.scss", sass_path + "/mobile.scss")
-      FileUtils.mv(sass_path + "/shipd-tablet.scss", sass_path + "/tablet.scss")
-      FileUtils.mv(sass_path + "/shipd-desktop.scss", sass_path + "/desktop.scss")
+      destination_directory = copier.destination_directory
+      FileUtils.mv(destination_directory + "/shipd-mobile.scss", destination_directory + "/mobile.scss")
+      FileUtils.mv(destination_directory + "/shipd-tablet.scss", destination_directory + "/tablet.scss")
+      FileUtils.mv(destination_directory + "/shipd-desktop.scss", destination_directory + "/desktop.scss")
       # inside contents have to be re-written too:
-      contents = File.read(sass_path + "/shipd-all.scss")
+      contents = File.read(destination_directory + "/shipd-all.scss")
       contents.gsub!("shipd-", "")
-      File.open(sass_path + "/all.scss", 'w+') do |f|
+      File.open(destination_directory + "/all.scss", 'w+') do |f|
         f.write contents
       end
-      FileUtils.rm(sass_path + "/shipd-all.scss")
+      FileUtils.rm(destination_directory + "/shipd-all.scss")
     end
 
     def copier
